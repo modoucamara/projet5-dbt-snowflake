@@ -40,4 +40,7 @@ group by
     o.clerk,
     o.ship_priority
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b38adda (Ajout modèles intermediate et marts - Rôle 3)

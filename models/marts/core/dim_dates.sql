@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 -- Dimension table for dates generated via Snowflake native SQL
 -- Co-authored with CoCo
+=======
+
+>>>>>>> b38adda (Ajout modèles intermediate et marts - Rôle 3)
 {{
     config(
         materialized='table'
@@ -7,9 +11,17 @@
 }}
 
 with date_spine as (
+<<<<<<< HEAD
     select
         dateadd(day, seq4(), '1992-01-01'::date) as date_day
     from table(generator(rowcount => 2557))
+=======
+    {{ dbt_utils.date_spine(
+        datepart="day",
+        start_date="cast('1992-01-01' as date)",
+        end_date="cast('1998-12-31' as date)"
+    ) }}
+>>>>>>> b38adda (Ajout modèles intermediate et marts - Rôle 3)
 )
 
 select

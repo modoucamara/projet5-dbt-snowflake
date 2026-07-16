@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 -- Dimension table joining nations with their regions
 -- Co-authored with CoCo
+=======
+
+>>>>>>> b38adda (Ajout modèles intermediate et marts - Rôle 3)
 with nations as (
     select * from {{ ref('stg_tpch_nation') }}
 ),
