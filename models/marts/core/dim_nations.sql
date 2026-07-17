@@ -18,6 +18,6 @@ select
     r.region_key,
     r.region_name
 from nations n
-inner join regions r
+inner join regions 
     on n.region_key = r.region_key
 
